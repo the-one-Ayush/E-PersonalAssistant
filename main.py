@@ -1,5 +1,12 @@
 from webbrowser import open_new
 import os
+import pyttsx3
+
+# init function to get an engine instance for the speech synthesis  
+engine = pyttsx3.init() 
+engine.say('Hello! Which website do you want to open?')
+# run and wait method, it processes the voice commands
+engine.runAndWait()
 
 #This is the code for the openning the websites
 dict_of_websites = {"wikipedia": "https:\\www.wikipedia.org", "youtube":"https:\\www.youtube.com", "google":"https:\\www.google.com", "gmail":"https:\\www.gmail.com", "github":"https:\\www.gihtub.com", 'stack overflow':'https:\\www.stackoverflow.com', 'amazon':'https:\\www.amazon.in', 'flipkart':'https:\\www.flipkart.com'}
